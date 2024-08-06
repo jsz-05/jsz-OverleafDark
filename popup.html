@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Toggle</title>
+  <style>
+    body {
+      width: 250px;
+      height: 280px; /* Adjusted height to accommodate the footer */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #ecf0f1;
+      border: 2px solid #89949f;
+    }
+    h1 {
+      font-size: 20px;
+      margin: 10px 0 25px;
+      text-align: center;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+    }
+    h1 img {
+      width: 24px; /* Adjust the size of the icon */
+      height: 24px;
+      margin-right: 8px; /* Space between icon and text */
+    }
+    .toggle-container {
+      height: 190px; /* Adjusted to create space for footer */
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+    .toggleButton {
+      width: 100%;
+      height: 40px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .toggleButton::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: all 0.5s ease;
+    }
+    .toggleButton:hover::before {
+      left: 100%;
+    }
+    #blackThemeButton {
+      background-color: #1b1b1b;
+      color: #ecf0f1;
+    }
+    #purpleThemeButton {
+      background-color: #3B0049;
+      color: #ecf0f1;
+    }
+    #blueThemeButton {
+      background-color: #011544;
+      color: #ecf0f1;
+    }
+    #offButton {
+      background-color: #ecf0f1;
+      color: #2c3e50;
+    }
+    .toggleButton.active {
+      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+      transform: scale(1.03);
+    }
+    .footer {
+      margin-top: 12px; /* Increased margin to add space between button and footer */
+      font-size: 12px;
+      text-align: center;
+    }
+    .footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1><img src="icons/icon48_w.png" alt="Icon">Overleaf Dark</h1>
+  <div class="toggle-container">
+    <button id="blackThemeButton" class="toggleButton">Obsidian Night</button>
+    <button id="purpleThemeButton" class="toggleButton">Deep Amethyst</button>
+    <button id="blueThemeButton" class="toggleButton">Cosmic Twilight</button> 
+    <button id="offButton" class="toggleButton">Default</button>
+  </div>
+  <div class="footer">
+    © 2024 JsZ. <a href="https://github.com/jsz-05/jsz-OverleafDark" target="_blank">Report bugs here</a>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
