@@ -4,7 +4,7 @@ const styleblue = document.createElement('style');
 
 
 styleBlack.innerText = `
-/* Black Theme Styles */
+/* Purple Theme Styles (same as Black Theme for now) */
 html, .loading-screen.ng-scope, .history-entries, .history-labels-list,
 body, .navbar, footer, .popover, .tooltip, .pdf, .pdf-viewer,
 .cm-panels-top, .toolbar-header, .ide-react-editor-sidebar, .history-react,
@@ -46,15 +46,15 @@ footer,
 .loading,
 .history-version-list-container,
 .chat {
-  filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
-    <filter id="smartInvert" color-interpolation-filters="sRGB">
-      <feComponentTransfer>
-        <feFuncR type="table" tableValues="1 0"/>
-        <feFuncG type="table" tableValues="1 0"/>
-        <feFuncB type="table" tableValues="1 0"/>
-      </feComponentTransfer>
-    </filter>\
-  </svg>#smartInvert');
+    filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="replaceWhiteWithPurple" color-interpolation-filters="sRGB">\
+        <feComponentTransfer>\
+          <feFuncR type="table" tableValues="1 0.0"/>\
+          <feFuncG type="table" tableValues="1 0.0"/>\
+          <feFuncB type="table" tableValues="1 0"/>\
+        </feComponentTransfer>\
+      </filter>\
+    </svg>#replaceWhiteWithPurple');
 }
 
 .cm-gutters {
@@ -86,9 +86,13 @@ footer,
     background: rgba(0, 0, 0, 0.02) !important;
 }
 
-::selection, .ͼe.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, .ͼe .cm-selectionBackground, .ͼe .cm-content ::selection, .ͼe .cm-searchMatch.cm-searchMatch.cm-searchMatch-selected {
-    background-color: rgba(181, 213, 255, 0.3);
+/* Specify the highlight color directly */
+::.ͼe.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, 
+.ͼe .cm-selectionBackground, .ͼe .cm-content ::selection, .ͼe .cm-searchMatch.cm-searchMatch.cm-searchMatch-selected {
+    background-color: rgba(0, 180, 0, 0.5) !important; 
+    color: #000000 !important; /* Ensuring text color is readable */
 }
+
 `;
 
 
@@ -141,16 +145,15 @@ footer,
 .loading,
 .history-version-list-container,
 .chat {
-filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
-  <filter id="replaceWhiteWithPurple" color-interpolation-filters="sRGB">
-    <feComponentTransfer>
-      <feFuncR type="table" tableValues="1 0.02"/>
-      <feFuncG type="table" tableValues="1 0.03"/>
-      <feFuncB type="table" tableValues="1 0.1"/>
-    </feComponentTransfer>
-  </filter>\
-</svg>#replaceWhiteWithPurple');
-
+    filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="replaceWhiteWithPurple" color-interpolation-filters="sRGB">\
+        <feComponentTransfer>\
+          <feFuncR type="table" tableValues="1 0.02"/>\
+          <feFuncG type="table" tableValues="1 0.03"/>\
+          <feFuncB type="table" tableValues="1 0.1"/>\
+        </feComponentTransfer>\
+      </filter>\
+    </svg>#replaceWhiteWithPurple');
 }
 
 .cm-gutters {
@@ -182,9 +185,13 @@ filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
     background: rgba(0, 0, 0, 0.02) !important;
 }
 
-::selection, .ͼe.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, .ͼe .cm-selectionBackground, .ͼe .cm-content ::selection, .ͼe .cm-searchMatch.cm-searchMatch.cm-searchMatch-selected {
-    background-color: rgba(181, 213, 255, 0.3);
+/* Specify the highlight color directly */
+::.ͼe.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, 
+.ͼe .cm-selectionBackground, .ͼe .cm-content ::selection, .ͼe .cm-searchMatch.cm-searchMatch.cm-searchMatch-selected {
+    background-color: rgba(0, 180, 0, 0.5) !important; 
+    color: #000000 !important; /* Ensuring text color is readable */
 }
+
 `;
 
 
@@ -240,25 +247,15 @@ footer,
 .loading,
 .history-version-list-container,
 .chat {
-    // filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
-    //   <filter id="invert" color-interpolation-filters="linearRGB">\
-    //     <feColorMatrix in="SourceGraphic" type="matrix"\
-    //       values="-0.98 0 0 0 0.8\
-    //         0 -0.98 0 0 0.8\
-    //         0 0 -0.95 0 0.8\
-    //         0 0 0 1 0" />\
-    //   </filter>\
-    // </svg>#invert');
-
-filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
-  <filter id="replaceWhiteWithPurple" color-interpolation-filters="sRGB">
-    <feComponentTransfer>
-      <feFuncR type="table" tableValues="1 0.08"/>
-      <feFuncG type="table" tableValues="1 0.0"/>
-      <feFuncB type="table" tableValues="1 0.1"/>
-    </feComponentTransfer>
-  </filter>\
-</svg>#replaceWhiteWithPurple');
+    filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
+      <filter id="replaceWhiteWithPurple" color-interpolation-filters="sRGB">\
+        <feComponentTransfer>\
+          <feFuncR type="table" tableValues="1 0.08"/>\
+          <feFuncG type="table" tableValues="1 0.0"/>\
+          <feFuncB type="table" tableValues="1 0.1"/>\
+        </feComponentTransfer>\
+      </filter>\
+    </svg>#replaceWhiteWithPurple');
 }
 
 .cm-gutters {
@@ -290,10 +287,15 @@ filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
     background: rgba(0, 0, 0, 0.02) !important;
 }
 
-::selection, .ͼe.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, .ͼe .cm-selectionBackground, .ͼe .cm-content ::selection, .ͼe .cm-searchMatch.cm-searchMatch.cm-searchMatch-selected {
-    background-color: rgba(181, 213, 255, 0.3);
+/* Specify the highlight color directly */
+::.ͼe.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, 
+.ͼe .cm-selectionBackground, .ͼe .cm-content ::selection, .ͼe .cm-searchMatch.cm-searchMatch.cm-searchMatch-selected {
+    background-color: rgba(0, 180, 0, 0.5) !important; 
+    color: #000000 !important; /* Ensuring text color is readable */
 }
+
 `;
+
 
 function applyTheme(theme) {
   if (theme === 'black') {
