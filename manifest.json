@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Overleaf Dark",
-  "description": "Enhance your Overleaf experience with various dark themes including Obsidian Night, Deep Amethyst, and Cosmic Twilight.",
+  "name": "Overleaf Dark Pro",
+  "description": "Enhance your Overleaf experience with various dark themes.",
   "version": "0.0.2",
   "icons": {
     "48": "icons/icon48.png",
