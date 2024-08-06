@@ -1,6 +1,5 @@
 <p align="center">
     <img src="./assets/marquee.png" alt="SmoothCursorify" height="150px">
-    <p align="center">Enhance your Overleaf experience with 3 dark themes including Black, Blue and Violet.</p>
     <p align="center">
     <!-- <a href="https://chromewebstore.google.com/detail/ebpefnjjlnnagcmlmcnpjeaebmojpgni/preview?hl=en&authuser=0">Chrome Webstore</a>&nbsp;&bull;&nbsp;
     <a href="https://www.youtube.com/watch?v=35It5ijWl_0">Demo video</a>&nbsp; -->

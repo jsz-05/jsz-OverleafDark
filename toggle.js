@@ -144,7 +144,7 @@ footer,
 filter: url('data:image/svg+xml, <svg xmlns="http://www.w3.org/2000/svg">\
   <filter id="replaceWhiteWithPurple" color-interpolation-filters="sRGB">
     <feComponentTransfer>
-      <feFuncR type="table" tableValues="1 0.0"/>
+      <feFuncR type="table" tableValues="1 0.02"/>
       <feFuncG type="table" tableValues="1 0.03"/>
       <feFuncB type="table" tableValues="1 0.1"/>
     </feComponentTransfer>
