@@ -14,7 +14,7 @@ The extension inverts colours in the editor, PDF viewer, and modals, and adds a 
 
 ## Installation steps
 If you want to install via the Chrome Webstore (recommended)
-1. Navigate to <a href="example.com">this link.</a>
+1. Navigate to <a href="https://chromewebstore.google.com/detail/overleaf-dark-pro/dfkjojjabigjnffffdekpofbjanfhpfc?authuser=0&hl=en">this link.</a>
 2. Click "Add to Chrome"
 
 If you want to install this extension unpacked:
